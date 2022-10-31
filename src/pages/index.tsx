@@ -33,10 +33,7 @@ const App = function () {
                 <figure className="mb-5">
                   <img src="/logo.png" alt="logo" className="mask mask-squircle" />
                 </figure>
-                <h1 className="mb-5 text-5xl font-bold">Hello Dapp Starter</h1>
-                <p className="mb-5">
-                  Edit <code>pages/index.tsx</code> and save to test HMR updates.
-                </p>
+                <h1 className="mb-5 text-5xl font-bold">Hello Guys</h1>
               </div>
             </div>
           </div>
