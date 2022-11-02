@@ -1,6 +1,6 @@
 import { Web3ReactProvider } from "@web3-react/core";
 import { useEffect } from "react";
-
+import Image from "next/image"
 import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
@@ -9,7 +9,7 @@ const App = function () {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-  }, []);
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
@@ -31,7 +31,7 @@ const App = function () {
             <div className="text-center hero-content">
               <div className="max-w-md px-4 py-8">
                 <figure className="mb-5">
-                  <img src="/logo.png" alt="logo" className="mask mask-squircle" />
+                  <Image src="/logo.png" alt="logo" height="416" width="416"className="mask mask-squircle" />
                 </figure>
                 <h1 className="mb-5 text-5xl font-bold">Hello Guys</h1>
               </div>
