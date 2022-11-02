@@ -1,7 +1,12 @@
 {
   "cSpell.words": [
+    "IERC",
+    "Initializable",
     "loglevel",
     "nomiclabs",
-    "typechain"
+    "Pausable",
+    "Proxiable",
+    "typechain",
+    "UUPS"
   ]
 }
