@@ -42,7 +42,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error",
       {
-        devDependencies: ["**/*.test.tsx", "**/*.stories.tsx", "mocks/**/*.ts"],
+        devDependencies: ["**/*.test.tsx", "test/**/*", "**/*.stories.tsx", "mocks/**/*.ts", "hardhat.config.ts"],
       },
     ],
   },
