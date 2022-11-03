@@ -80,7 +80,7 @@ const App = function () {
               className="pl-2"
               href="https://vercel.com/new/git/external?repository-url=https://github.com/jellydn/dapp-starter/"
             >
-              <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+              <Image src="https://vercel.com/button" alt="Deploy with Vercel" />
             </a>
           </div>
         </footer>

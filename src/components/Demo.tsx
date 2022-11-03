@@ -11,6 +11,7 @@ import { injected, walletconnect, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import { Header } from "./Header";
+import Image from 'next/image'
 
 function getErrorMessage(error: Error) {
   if (error instanceof NoEthereumProviderError) {
@@ -60,7 +61,7 @@ export const Demo = function () {
       <div className="grid grid-cols-2 gap-2 px-2 py-4">
         <div className="card bordered">
           <figure>
-            <img
+            <Image
               className="h-24"
               src="https://images.ctfassets.net/9sy2a0egs6zh/4zJfzJbG3kTDSk5Wo4RJI1/1b363263141cf629b28155e2625b56c9/mm-logo.svg"
               alt="metamask"
@@ -133,7 +134,7 @@ export const Demo = function () {
         </div>
         <div className="card bordered">
           <figure>
-            <img
+            <Image
               className="h-24"
               src="https://docs.walletconnect.com/img/walletconnect-logo.svg"
               alt="wallet connect"
