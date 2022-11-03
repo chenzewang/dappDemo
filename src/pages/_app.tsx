@@ -1,10 +1,13 @@
 import type { AppProps } from "next/app";
+import { Analytics } from '@vercel/analytics/react';
 
 import "../index.css";
 
 const MyApp = function ({ Component, pageProps }: AppProps) {
-  console.log("🚀 ~ file: _app.tsx ~ line 8 ~ MyApp ~ pageProps", pageProps)
-  return <Component {...pageProps} />;
+  return <>
+  <Analytics/>
+   <Component {...pageProps} />;
+  </>
 };
 
 export default MyApp;

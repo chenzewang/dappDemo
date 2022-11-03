@@ -63,6 +63,8 @@ export const Demo = function () {
           <figure>
             <Image
               className="h-24"
+              width={200}
+              height={50}
               src="https://images.ctfassets.net/9sy2a0egs6zh/4zJfzJbG3kTDSk5Wo4RJI1/1b363263141cf629b28155e2625b56c9/mm-logo.svg"
               alt="metamask"
             />
@@ -136,6 +138,8 @@ export const Demo = function () {
           <figure>
             <Image
               className="h-24"
+              width={100}
+              height={100}
               src="https://docs.walletconnect.com/img/walletconnect-logo.svg"
               alt="wallet connect"
             />

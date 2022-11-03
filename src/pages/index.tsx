@@ -77,10 +77,10 @@ const App = function () {
           <div>
             <span className="footer-title">1-click Deployment</span>
             <a
-              className="pl-2"
+              className="link link-hover"
               href="https://vercel.com/new/git/external?repository-url=https://github.com/jellydn/dapp-starter/"
             >
-              <Image src="https://vercel.com/button" alt="Deploy with Vercel" />
+              Vercel
             </a>
           </div>
         </footer>
