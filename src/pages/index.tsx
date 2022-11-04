@@ -5,7 +5,7 @@ import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 const App = function () {
-  const [theme, setTheme] = useLocalStorage<"dark" | "light">("theme", "dark");
+  const [theme, setTheme] = useLocalStorage<"dark" | "cupcake">("theme", "dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -13,8 +13,8 @@ const App = function () {
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
-      document.documentElement.setAttribute("data-theme", prevTheme === "dark" ? "light" : "dark");
-      return prevTheme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", prevTheme === "dark" ? "cupcake" : "dark");
+      return prevTheme === "dark" ? "cupcake" : "dark";
     });
   };
   return (

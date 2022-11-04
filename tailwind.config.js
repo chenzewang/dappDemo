@@ -7,5 +7,8 @@ module.exports = {
   variants: {
     extend: {},
   },
+  daisyui: {
+    themes: ["cupcake", "dark"],
+  },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };

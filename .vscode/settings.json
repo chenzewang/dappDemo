@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
+    "daisyui",
     "IERC",
     "Initializable",
     "loglevel",
     "nomiclabs",
     "Pausable",
     "Proxiable",
+    "tailwindcss",
     "typechain",
     "UUPS"
   ]
