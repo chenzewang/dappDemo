@@ -14,7 +14,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["./src/*"]
+      "@src/*": ["./src/*"],
+      "@vercel/analytics/react": ["./node_modules/@vercel/analytics/dist/react"]
     },
     "allowJs": true,
     "skipLibCheck": true,
