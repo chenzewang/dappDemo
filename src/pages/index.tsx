@@ -1,6 +1,8 @@
+import CoinPrice from "@src/components/CoinPrice";
 import { Web3ReactProvider } from "@web3-react/core";
+import Image from "next/image";
 import { useEffect } from "react";
-import Image from "next/image"
+
 import Demo, { getLibrary } from "../components/Demo";
 import useLocalStorage from "../hooks/useLocalStorage";
 
@@ -28,12 +30,20 @@ const App = function () {
         <div className="container min-h-screen mx-auto">
           <Demo />
           <div className="hero">
-            <div className="text-center hero-content">
+            <div className="hero-content flex-col">
               <div className="max-w-md px-4 py-8">
-                <figure className="mb-5">
-                  <Image src="/logo.png" alt="logo" height="416" width="416"className="mask mask-squircle" />
+                <figure className="mb-5 base-100">
+                  <Image
+                    src="/logo_transparent_small.svg"
+                    alt="logo"
+                    height="416"
+                    width="416"
+                    // className="mask mask-squircle"
+                  />
                 </figure>
-                <h1 className="mb-5 text-5xl font-bold">Hello Guys</h1>
+              </div>
+              <div>
+                <CoinPrice></CoinPrice>
               </div>
             </div>
           </div>
