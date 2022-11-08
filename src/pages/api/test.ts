@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import UserModel from './models/user';
 
 
-export default function handler(req:NextApiRequest, res:NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
 
-  console.log("req",req);
-  console.log("res",res);
-  
-  res.status(200).json({ name: 'Johaaaan Doe' })
+  const pets = await UserModel.find({})
+
+  res.status(200).json({ name: pets })
 }

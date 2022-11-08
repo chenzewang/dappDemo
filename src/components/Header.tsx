@@ -13,11 +13,6 @@ export const Header = function () {
     <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5337133458846513"
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       <div className="flex-1 px-2 mx-2">
         <span className="text-lg font-bold">{active ? "🟢" : error ? "🔴" : "🟠"}</span>

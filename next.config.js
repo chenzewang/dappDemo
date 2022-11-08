@@ -1,4 +1,5 @@
 // @ts-check
+require("./lib/connectMongodb");
 
 /**
  * @type {import('next').NextConfig}

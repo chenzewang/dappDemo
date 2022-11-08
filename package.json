@@ -28,6 +28,8 @@
     "@web3-react/walletconnect-connector": "6.2.13",
     "daisyui": "2.36.1",
     "loglevel": "1.8.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.2",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
