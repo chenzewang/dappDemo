@@ -3,7 +3,7 @@ import logger from "@src/logger";
 import { useWeb3React } from "@web3-react/core";
 import { useEffect, useState } from "react";
 
-export const Balance = function () {
+export const CoinPrice = function () {
   const { account, library, chainId } = useWeb3React();
 
   return (
@@ -59,4 +59,4 @@ export const Balance = function () {
   );
 };
 
-export default Balance;
+export default CoinPrice;

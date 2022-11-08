@@ -5,13 +5,13 @@ import {
   UserRejectedRequestError as UserRejectedRequestErrorInjected,
 } from "@web3-react/injected-connector";
 import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from "@web3-react/walletconnect-connector";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { injected, walletconnect, POLLING_INTERVAL } from "../dapp/connectors";
 import { useEagerConnect, useInactiveListener } from "../dapp/hooks";
 import logger from "../logger";
 import { Header } from "./Header";
-import Image from 'next/image'
 
 function getErrorMessage(error: Error) {
   if (error instanceof NoEthereumProviderError) {
