@@ -48,6 +48,11 @@ module.exports = {
       url: process.env.ROPSTEN_PROVIDER_URL || "",
       accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
+    goerlitestnet: {
+      chainId: 5,
+      url: process.env.GOERLI_PROVIDER_URL,
+      accounts: process.env.GOERLI_ACCOUNT_PRIVATE_KET !== undefined ? [process.env.GOERLI_ACCOUNT_PRIVATE_KET] : [],
+    },
     tomotestnet: {
       chainId: 89,
       url: process.env.TOMO_PROVIDER_URL || "https://rpc.testnet.tomochain.com",
